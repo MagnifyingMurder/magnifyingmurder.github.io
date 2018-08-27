@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="timeline.html">Timeline</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="instagram.html">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="podcast.html">Podcast</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="submit.html">Submit</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+    </div>
+<br>
+  <h1 class="pagetitle">Submit</h1>
+<br>
+  <hr>
+<h3 class="submittitle">Submit your own findings here!</h3>
+<div class="contactform">
+    <form action="#">
+        <label for="name">Name: </label>
+            <input type="text" id="fname" name="name">
+            <label for="contactemail">Email: </label>
+            <input type="text" id="cemail" name="contactemail">
+            <label for="comment">Comments: </label>
+            <textarea id="subject" name="subject" class="subjectform"></textarea>
+            <button onclick="submitFunction()">Submit</button>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function submitFunction() {
+        alert('Thank you for your submission!');
+    }
+</script>
+</body>
+</html>
