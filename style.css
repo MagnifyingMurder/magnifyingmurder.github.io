@@ -93,8 +93,13 @@ header {
       font-size: 1rem;
     }
   }
-  #stuff {
+  .hide {
     display: none;
+    text-align: center;
+  }
+  .unlock{
+    text-align: center;
+    margin: 0 auto;
   }
   .cd-timeline {
     overflow: hidden;

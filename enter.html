@@ -32,29 +32,47 @@
                   </nav>
     </div>
 <br>
-  <h1 class="pagetitle">Enter</h1>
+  <h1 class="pagetitle">[66 69 6c 65 73]</h1>
 <br>
   <hr>
-  <div id="stuff">
-      <p>secret content 123</p>
-  </div>
-  <hr>
-  <form>
-      <label for="pswd">Enter your password: </label>
-      <input type="password" id="pswd">
-      <input type="button" value="Submit" onclick="checkPswd();" />
-  </form>
+<div>
+    <div id="pcast1" class="hide">
+        <h2>[45 70 69 73 6f 64 65 20 31]</h2>
+        <audio src="media/podcastintro.m4a" controls class="podcast1"></audio>
+        <hr>
+    </div>
+</div>
+<div>
+        <div id="vid2" class="hide">
+            <h2>[CONTENT2?]</h2>
+            <p>link here</p>
+            <hr>
+        </div>
+    </div>
+    <div class="unlock">
+        <form>
+            <label for="pswd">[55 6e 6c 6f 63 6b]</label><br>
+            <input type="password" id="pswd"><br>
+            <input type="button" value="hmm" onclick="checkPswd();" />
+        </form>
+    </div>
   <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "123";
+        var pw1 = "123";
+        var pw2 = "asd";
         var password = document.getElementById("pswd").value;
-        var z = document.getElementById("stuff");
-        if (password == confirmPassword) {
-            z.style.display ="block";
+        var z = document.getElementById("pcast1");
+        var x = document.getElementById("vid2");
+        if (password == pw1) {
+            z.style.display = "block";
+        }
+        else if (password == pw2) {
+            x.style.display = "block";
         }
         else{
             z.style.display ="none";
-            alert("Passwords do not match.");
+            x.style.display ="none";
+            alert("Incorrent password. Access denied.");
         }
     }
     </script>
