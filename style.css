@@ -93,7 +93,9 @@ header {
       font-size: 1rem;
     }
   }
-  
+  #stuff {
+    display: none;
+  }
   .cd-timeline {
     overflow: hidden;
     margin: 2em auto;
