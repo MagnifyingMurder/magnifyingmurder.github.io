@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="hideeverything()">
     <div class="nav">
             <nav class="navbar navbar-expand-lg navbar-light">
                       <ul class="navbar-nav">
@@ -74,6 +74,12 @@
             x.style.display ="none";
             alert("Incorrent password. Access denied.");
         }
+    }
+    function hideeverything(){
+        var z = document.getElementById("pcast1");
+        var x = document.getElementById("vid2");
+        z.style.display = "none";
+        x.style.display = "none";
     }
     </script>
 </body>
