@@ -32,7 +32,7 @@
                   </nav>
     </div>
 <br>
-  <h1 class="pagetitle">[66 69 6c 65 73]</h1>
+  <h1 class="pagetitle">[50 72 69 76 61 74 65]</h1>
 <br>
   <hr>
 <div>
@@ -80,6 +80,15 @@
         var x = document.getElementById("vid2");
         z.style.display = "none";
         x.style.display = "none";
+        var pw = prompt("Enter code","");
+        if (pw == "same"){
+          alert("Access granted");
+          //window.location="enter.html";
+        }
+        else{
+          alert("Access denied");
+          unlock();
+        }
     }
     </script>
 </body>

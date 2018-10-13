@@ -43,6 +43,10 @@ input[type=submit]{
 .pagetitle{
   text-align: center;
 }
+.lock{
+  text-align: center;
+  margin: 0 auto;
+}
 .navbar-center
 {
     position: absolute;
